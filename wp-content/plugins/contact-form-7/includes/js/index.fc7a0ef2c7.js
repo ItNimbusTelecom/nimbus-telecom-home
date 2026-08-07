@@ -5,7 +5,7 @@
   // que dejó de funcionar al no haber WordPress detrás. Envía los mismos 2 formularios
   // (608 y 644) a un backend propio (API Gateway + Lambda), que reenvía a un webhook de
   // Make.com para el envío del email. Ver infra/.
-  const API_ENDPOINT = "https://s52kyxxyu3.execute-api.eu-west-1.amazonaws.com/submit-form";
+  const API_ENDPOINT = "https://465rjm3mg5.execute-api.eu-west-1.amazonaws.com/submit-form";
   const DEFAULT_LANGUAGE = "es";
 
   const FORM_RULES = {
