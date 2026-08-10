@@ -35,7 +35,7 @@ export class FormsBackendStack extends cdk.Stack {
     const submitFormFn = new NodejsFunction(this, "SubmitFormFunction", {
       entry: path.join(__dirname, "..", "lambda", "submit-form.ts"),
       handler: "handler",
-      runtime: Runtime.NODEJS_20_X,
+      runtime: Runtime.NODEJS_22_X,
       timeout: cdk.Duration.seconds(10),
       memorySize: 256,
       bundling: {
