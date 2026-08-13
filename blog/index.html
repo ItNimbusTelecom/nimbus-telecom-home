@@ -1311,5 +1311,5 @@ const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(
 </dialog>
 <!-- #moove_gdpr_cookie_modal -->
 <!--/copyscapeskip-->
-<script id="js-year-script">document.querySelectorAll(".js-year").forEach(function(e){e.textContent=new Date().getFullYear();});</script>
+<script id="js-year-script">fetch(location.href,{method:"HEAD",cache:"no-store"}).then(function(r){var d=r.headers.get("Date");if(d){var y=new Date(d).getFullYear();if(y>2000)document.querySelectorAll(".js-year").forEach(function(e){e.textContent=y;});}}).catch(function(){});</script>
 </body></html><!-- WP Fastest Cache file was created in 0.585 seconds, on 16 de June de 2026 @ 20:16 --><!-- via php -->

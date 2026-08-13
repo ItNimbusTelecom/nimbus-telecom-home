@@ -1944,7 +1944,7 @@ const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(
 </dialog>
 <!-- #moove_gdpr_cookie_modal -->
 <!--/copyscapeskip-->
-<script id="js-year-script">document.querySelectorAll(".js-year").forEach(function(e){e.textContent=new Date().getFullYear();});</script>
+<script id="js-year-script">fetch(location.href,{method:"HEAD",cache:"no-store"}).then(function(r){var d=r.headers.get("Date");if(d){var y=new Date(d).getFullYear();if(y>2000)document.querySelectorAll(".js-year").forEach(function(e){e.textContent=y;});}}).catch(function(){});</script>
 </body>
 <!-- Mirrored from nimbustelecom.es/faqs/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 03 Apr 2026 10:51:20 GMT -->
 </html><!-- WP Fastest Cache file was created in 1.343 seconds, on 3 de April de 2026 @ 12:41 -->
